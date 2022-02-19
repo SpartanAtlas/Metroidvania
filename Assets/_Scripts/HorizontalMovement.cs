@@ -31,6 +31,7 @@ namespace MetroidvaniaProject
             MovementPressed();
         }
 
+
         protected virtual bool MovementPressed()
         {
             if (Input.GetAxis("Horizontal") != 0)

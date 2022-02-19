@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 1621913078}
   - component: {fileID: 1621913077}
   - component: {fileID: 1621913076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 1976320472}
   - component: {fileID: 1976320473}
   m_Layer: 0
-  m_Name: Player
+  m_Name: TempPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,6 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingLeft: 0
+  isGrounded: 0
 --- !u!114 &1976320471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingLeft: 0
+  isGrounded: 0
 --- !u!114 &1976320472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,6 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingLeft: 0
+  isGrounded: 0
   timeTillMaxSpeed: 0.75
   maxSpeed: 6
 --- !u!114 &1976320473
@@ -586,8 +589,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30115078d46ba56489158e78fbf6f186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 0
-  distanceToCollider: 0
+  isFacingLeft: 0
+  isGrounded: 0
+  maxJump: 0
+  jumpForce: 250
+  distanceToCollider: 0.05
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
